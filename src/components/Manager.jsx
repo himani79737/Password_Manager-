@@ -21,7 +21,7 @@ const Manager = () => {
     const copyText = (text) => {
         toast('Copied to clipboard!', {
             position: "bottom-right",
-            autoClose: 5000,
+            autoClose: 3000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
@@ -55,7 +55,7 @@ const Manager = () => {
             setform({ site: "", username: "", password: "" })
             toast('Password saved!', {
             position: "top-right",
-            autoClose: 5000,
+            autoClose: 3000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
@@ -78,7 +78,7 @@ const Manager = () => {
             localStorage.setItem("passwords", JSON.stringify(passwordArray.filter(item=>item.id!==id))) 
             toast('Password Deleted!', {
                 position: "top-right",
-                autoClose: 5000,
+                autoClose: 3000,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: true,
@@ -109,7 +109,7 @@ const Manager = () => {
         <>
             <ToastContainer
                 position="top-right"
-                autoClose={5000}
+                autoClose={3000}
                 hideProgressBar={false}
                 newestOnTop={false}
                 closeOnClick
@@ -231,5 +231,6 @@ const Manager = () => {
         </>
     )
 }
+
 
 export default Manager
