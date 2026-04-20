@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className='bg-purple-900 text-gray-300 flex items-center justify-between px-7 h-24 w-full'>
       <div className="material-symbols-outlined "> key </div>
-      <a href="#">
+      <a href="https://github.com/himani79737/Password_Manager-">
         <button className='my-5 mx-2  flex rounded-3xl justify-between items-center ring-gray-300 ring cursor-pointer hover:bg-purple-700 '>
 
           <lord-icon className="w-10   "
